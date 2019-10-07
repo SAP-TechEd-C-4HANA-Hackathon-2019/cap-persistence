@@ -30,6 +30,7 @@
         "requires": {
             "db": {
                 "kind": "sqlite",
+                "pool": { "max": 1 },
                 "model": [
                     "srv",
                     "db"
