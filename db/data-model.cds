@@ -21,7 +21,7 @@ entity VisitorCounts : cuid, managed {
 
 entity Orders : cuid, managed {
   store   : Association to Stores;
-  amount  : Decimal(10, 2);
+  amount  : Integer;
   currency : Currency;
   ccOrderID :String;
 };
