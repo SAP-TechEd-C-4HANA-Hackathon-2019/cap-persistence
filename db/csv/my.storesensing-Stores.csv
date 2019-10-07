@@ -1,6 +1,6 @@
-ID,paxdevice_ID,town,latitude,longitude,currentVisitorCount
-1,paxcounter,Munich,48.1548895,11.4717964,3
-2,paxcountercsw04,Barcelona,41.3559532,2.1346457,54
-3,simupax3,Nijmegen,51.8112383,5.8306154,7
-4,simupax4,Athens,37.990832,23.70332,12
-5,simupax5,Bangalore,12.95396,77.4908548,35
+ID,paxdevice_ID,town,latitude,longitude,currentVisitorCount,turnoverLastHour
+1,paxcounter,Munich,48.1548895,11.4717964,3,20000
+2,paxcountercsw04,Barcelona,41.3559532,2.1346457,54,1000001
+3,simupax3,Nijmegen,51.8112383,5.8306154,7,37
+4,simupax4,Athens,37.990832,23.70332,12,30123
+5,simupax5,Bangalore,12.95396,77.4908548,35,4321

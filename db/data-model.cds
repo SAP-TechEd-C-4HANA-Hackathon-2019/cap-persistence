@@ -13,6 +13,7 @@ entity Stores {
   latitude : String;
   longitude : String;
   currentVisitorCount : Integer;
+  turnoverLastHour: Integer
 };
 
 entity VisitorCounts : cuid, managed {
