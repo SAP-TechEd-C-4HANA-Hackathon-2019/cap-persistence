@@ -6,9 +6,10 @@ annotate StoreService.Orders with @(
 		//
 		//	Lists of Orders
 		//
-		SelectionFields: [ store, createdAt, createdBy ],
+		SelectionFields: [ store_ID, createdAt, createdBy ],
 		LineItem: [
 			{Value: createdBy, Label:'Customer'},
+			{Value: store_ID, Label:'Store ID'},
 			{Value: ccOrderID, Label:'Order ID'},
 			{Value: amount, Label: 'Order Value' },
 			{Value: currency },
