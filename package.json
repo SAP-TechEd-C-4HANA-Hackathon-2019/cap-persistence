@@ -6,6 +6,7 @@
     "license": "ISC",
     "dependencies": {
         "@sap/cds": "^3.17.4",
+        "@sap/cds-odata-v2-adapter-proxy": "^1.4.1",
         "express": "^4.17.1"
     },
     "engines": {
@@ -14,7 +15,8 @@
     "scripts": {
         "build": "cds build/all --clean",
         "deploy": "cds deploy",
-        "start": "cds run"
+        "start": "cds run",
+        "startv2": "node v2server"
     },
     "files": [
         "srv",
