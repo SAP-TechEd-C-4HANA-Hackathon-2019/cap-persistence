@@ -1,0 +1,21 @@
+ID: cappersistence
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+  - name: cappersistence-db
+    type: hdb
+    path: db
+    parameters:
+      memory: 256M
+    requires:
+      - name: hdi_db
+
+resources:
+  - name: hdi_db
+    parameters:
+      config:
+        schema: KYMA
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
