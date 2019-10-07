@@ -1,2 +1,2 @@
-ID,store_ID,amount,currency,ccOrderID
+ID,store_ID,amount,currency_code,ccOrderID
 1bd96257-599a-4923-bbc6-ef1a881353f8,1,1234.56,EUR,76272727
