@@ -1,0 +1,80 @@
+{
+    "services": {
+        "LaunchPage": {            
+            "adapter": {
+                "config": {
+                    "catalogs": [
+                        {
+                            "id": "sapcc_catalog",
+                            "title": "SAP Commerce Cloud Dashboard Catalog",
+                            "tiles": [
+                                {
+                                    "id": "Orders",
+                                    "title": "Browse Orders",
+                                    "size": "1×1",
+                                    "tileType": "sap.ushell.ui.tile.Static",
+                                    "properties": {
+                                        "chipId": "catalogTile_001",
+                                        "title": "Browse Orders",
+                                        "info": "The latest Orders",
+                                        "targetURL": "#Orders-manage"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [
+                        {
+                            "id": "sapcc_group",
+                            "title": "SAP Commerce Cloud Dashboard Group",
+                            "isPreset": true,
+                            "isVisible": true,
+                            "isGroupLocked": false,
+                            "tiles": [
+                                {
+                                    "id": "BrowseOrders",
+                                    "title": "Browse Orders",
+                                    "size": "1×1",
+                                    "tileType": "sap.ushell.ui.tile.StaticTile",
+                                    "properties": {
+                                        "chipId": "catalogTile_001",
+                                        "title": "Browse Orders",
+                                        "info": "The latest Orders",
+                                        "targetURL": "#Orders-manage"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "NavTargetResolution": {
+            "config": {
+                "enableClientSideTargetResolution": true
+            }
+        },
+        "ClientSideTargetResolution": {
+            "adapter": {
+                "config": {
+                    "inbounds": {
+                        "actionV2Apps": {
+                            "semanticObject": "Orders",
+                            "action": "manage",
+                            "title": "Browse Orders",
+                            "signature": {
+                                "parameters": {},
+                                "additionalParameters": "allowed"
+                            },
+                            "resolutionResult": {
+                                "applicationType": "SAPUI5",
+                                "additionalInformation": "SAPUI5.Component=v2.orders",
+                                "url": "/v2/orders"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
